@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <title>Naye 14 de febrero ❤️</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://img.freepik.com/vector-gratis/tema-san-valentin-corazones-cielo-rosa_1308-38030.jpg?semt=ais_hybrid&w=740') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.message {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 55px;
+    border-radius: 20px;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+
+    font-family: 'Great Vibes', cursive;   /* ← ROMÁNTICA */
+    font-size: 48px;      /* ← GRANDE de verdad */
+    line-height: 1.2;
+
+    color: #d63384;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+    animation: bounce 1s infinite;
+
+    position: relative;
+    z-index: 9999;
+}
+
+.subtext {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #a61e66;
+    font-style: italic;
+    background: rgba(255,255,255,0.75);
+    padding: 8px 18px;
+    border-radius: 20px;
+    z-index: 9999;
+    position: relative;
+
+    animation: fadeSoft 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeSoft {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.message:hover {
+    transform: scale(1.1);
+}
+
+.hearts {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+    font-size: 50px;
+    color: #ff99b6;
+    animation: floatHearts 5s ease-in-out infinite;
+}
+
+@keyframes floatHearts {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(-150px) scale(1.5); opacity: 0.5; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.hearts:nth-child(2) { left: 25%; animation-duration: 6s; }
+.hearts:nth-child(3) { left: 40%; animation-duration: 7s; }
+.hearts:nth-child(4) { left: 60%; animation-duration: 8s; }
+.hearts:nth-child(5) { left: 75%; animation-duration: 9s; }
+
+.text-container {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.charming-text {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Cursive', sans-serif;
+    color: #d63384;
+    animation: fadeInText 6s ease-in-out infinite;
+    z-index: 1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80vw;
+    word-wrap: break-word;
+}
+
+.charming-text:nth-child(1) { top: 15%; left: 5%; text-align: left; animation-duration: 6s; }
+.charming-text:nth-child(2) { top: 25%; left: 5%; text-align: left; animation-duration: 7s; }
+.charming-text:nth-child(3) { top: 35%; left: 5%; text-align: left; animation-duration: 8s; }
+.charming-text:nth-child(4) { top: 15%; right: 5%; text-align: right; animation-duration: 6s; }
+.charming-text:nth-child(5) { top: 25%; right: 5%; text-align: right; animation-duration: 7s; }
+.charming-text:nth-child(6) { top: 35%; right: 5%; text-align: right; animation-duration: 8s; }
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.flowers {
+    position: absolute;
+    bottom: 10px;
+    animation: flowerAnimation 5s ease-in-out infinite;
+    font-size: 30px;
+}
+
+@keyframes flowerAnimation {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { transform: translateY(-50px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0; }
+}
+
+.flowers:nth-child(1) { left: 10%; animation-duration: 6s; }
+.flowers:nth-child(2) { left: 30%; animation-duration: 7s; }
+.flowers:nth-child(3) { left: 50%; animation-duration: 8s; }
+.flowers:nth-child(4) { left: 70%; animation-duration: 9s; }
+.flowers:nth-child(5) { left: 90%; animation-duration: 10s; }
+
+.bubbles {
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    color: #ff99b6;
+    animation: bubbleAnimation 7s ease-in-out infinite;
+}
+
+
+
+
+@keyframes bubbleAnimation {
+    0% { transform: translateY(0) scale(1); opacity: 0.8; }
+    50% { transform: translateY(-100px) scale(1.3); opacity: 0.4; }
+    100% { transform: translateY(0) scale(1); opacity: 0.8; }
+}
+
+.bubbles:nth-child(1) { left: 10%; animation-duration: 8s; }
+.bubbles:nth-child(2) { left: 30%; animation-duration: 9s; }
+.bubbles:nth-child(3) { left: 50%; animation-duration: 10s; }
+.bubbles:nth-child(4) { left: 70%; animation-duration: 11s; }
+.bubbles:nth-child(5) { left: 90%; animation-duration: 12s; }
+
+#bubbles-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mini {
+    display: block;        /* baja a otra línea */
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    color: #a61e66;
+    opacity: 0.9;
+}
+
+
+.heart-float {
+    position: fixed;
+    bottom: -160px;
+    animation: floatHeart 16s linear forwards; /* más lento */
+    z-index: 0;
+}
+
+@keyframes floatHeart {
+    from {
+        transform: translateY(0) scale(0.9);
+        opacity: 0;
+    }
+    15% { opacity: 1; }
+    to {
+        transform: translateY(-140vh) scale(1.15);
+        opacity: 0;
+    }
+}
+
+.heart-shape {
+    width: 420px;
+    height: 420px;
+
+    clip-path: path("M210 380 C60 250 10 150 110 95 C165 70 210 130 210 130 C210 130 255 70 310 95 C410 150 360 250 210 380");
+
+    overflow: hidden;
+    box-shadow: 0 20px 48px rgba(0,0,0,0.35);
+    background: white;
+}
+.heart-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: white;
+    transform: scale(1.15);
+}
+
+.text-bubble {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Cursive', sans-serif;
+    color: #d63384;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: floatText 8s ease-in-out forwards;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+@keyframes floatText {
+    0% { opacity: 0; transform: scale(0.5) translateY(0px); }
+    50% { opacity: 1; transform: scale(1.2) translateY(-50px); }
+    100% { opacity: 0; transform: scale(1) translateY(-100px); }
+}
+
+@media (max-width: 768px) {
+    .heart-shape {
+        width: 60px;  /* más pequeño para móvil */
+        height: 60px;
+    }
+    .heart-img {
+        transform: scale(1);
+    }
+}
+
+    .charming-text { font-size: 16px; padding: 8px 16px; }
+    .flowers { font-size: 25px; }
+    .bubbles { font-size: 20px; }
+}
+
+@media (max-width: 768px) {
+    .message {
+        font-size: 42px;
+        padding: 24px;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="message">
+            🌹🏹❤️ ¿Puedo ser tu San Valentin? ❤️🏹🌹
+            <span class="mini">Por hoy y para siempre tuyo ... Raul</span>
+        </div>
+        <div id="bubbles-text"></div>
+        <script src="script.js"></script>
+        <script>
+            // Lista de mensajes románticos que aparecerán en burbujas
+const messages = [
+  "Naye hermosa, bella, preciosa 🤩",
+  "Te quiero mucho, guapa ️️❤",
+  "Eres mi chica favorita 💕",
+  "Nayelover, para siempre 💖",
+  "Ojitos marrones bellos",
+  "Siempre pienso en ti, Naye💭",
+  "Siempre tuyo 💘"
+];
+
+const fotos = [
+  "img/Foto1.jpeg",
+  "img/Foto2.jpeg",
+  "img/Foto3.jpeg",
+  "img/Foto4.jpeg",
+  "img/Foto5.jpeg",
+  "img/Foto6.jpeg",
+  "img/Foto7.jpeg",
+  "img/Foto8.jpeg",
+  "img/Foto9.jpeg",
+  "img/Foto10.jpg",
+  "img/Foto11.jpg",
+  "img/Foto12.jpeg",
+  "img/Foto13.jpeg",
+  "img/Foto14.jpg",
+  "img/Foto15.jpeg",
+
+  "img/GIF1.gif",
+  "img/GIF2.gif",
+  "img/GIF3.gif",
+
+];
+
+// Función que crea una burbuja de texto con un mensaje aleatorio
+
+let lastFotos = []; // últimos 3 corazones
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart-float";
+
+  const heartWidth = 100; // tamaño aprox del corazón en px
+  const screenWidth = window.innerWidth;
+
+  // Limitar que el corazón no salga de la pantalla
+  const maxLeft = screenWidth - heartWidth;
+  heart.style.left = Math.random() * maxLeft + "px";
+
+  // Posición inicial vertical, justo debajo de la pantalla + un poco de variación
+  const screenHeight = window.innerHeight;
+  const startBottom = -Math.random() * 100 - 100; // entre -100px y -200px
+  heart.style.bottom = startBottom + "px";
+
+  const shape = document.createElement("div");
+  shape.className = "heart-shape";
+
+  const img = document.createElement("img");
+
+  // Elegir una foto que no esté en los últimos 3
+  let randomFotoIndex;
+  do {
+    randomFotoIndex = Math.floor(Math.random() * fotos.length);
+  } while (lastFotos.includes(randomFotoIndex));
+
+  lastFotos.push(randomFotoIndex);
+  if (lastFotos.length > 3) lastFotos.shift();
+
+  img.src = fotos[randomFotoIndex];
+  img.className = "heart-img";
+
+  shape.appendChild(img);
+  heart.appendChild(shape);
+  document.body.appendChild(heart);
+
+  // Duración de la animación aleatoria (12 a 18 segundos)
+  const duration = Math.random() * 6 + 12;
+  heart.style.animation = `floatHeart ${duration}s linear forwards`;
+
+  // Eliminar después de animación
+  setTimeout(() => heart.remove(), duration * 1000);
+}
+
+setInterval(createHeart, 2200);
+
+
+let bubblesOnScreen = 0;
+const MAX_BUBBLES = 6;
+
+function createTextBubble() {
+
+  if (bubblesOnScreen >= MAX_BUBBLES) return;
+
+  bubblesOnScreen++;
+
+  const bubble = document.createElement("div");
+  bubble.className = "text-bubble";
+  bubble.innerText = messages[Math.floor(Math.random() * messages.length)];
+
+  bubble.style.left = (Math.random() * 70 + 15) + "vw";
+  bubble.style.top  = (Math.random() * 70 + 15) + "vh";
+
+  document.getElementById("bubbles-text").appendChild(bubble);
+
+  setTimeout(() => {
+    bubble.remove();
+    bubblesOnScreen--;
+  }, 9000);
+}
+
+setInterval(createTextBubble, 1800);
+
+        </script>
+    </body>
+ 
+</html>
